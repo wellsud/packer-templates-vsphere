@@ -1,0 +1,42 @@
+# ----------------------------------------------------------------------------
+# Nome:         variables.pkrvars.hcl
+# Description:  Valores customizaveis da construção da Imagem
+# Author:       Wellington Oliveira (@woliveira)
+# URL:          https://github.com/v12n-io/packer
+# Date:         03/05/2022
+# ----------------------------------------------------------------------------
+
+
+/// Credenciais do Vcenter
+
+    vcenter_server          = "FQDNdoVCenter"
+    vcenter_username        = "UsuarioAdminCompermissãonoVcenter"
+    vcenter_password        = "SenhadoUsuarioAdmin"
+
+// Localização
+
+    vcenter_datacenter      = "DataCenterDoVcenter"
+    vcenter_cluster         = "ClusterdeHostsonddoVcenter"
+    vcenter_network         = "VMNetwork"
+    vcenter_datastore       = "LocalDeArmazenamentodoTemplate"
+    vcenter_host            = "SelecionaHostdentrodoCluster"
+    vcenter_folder          = "PastadosTemplates"
+
+// Configuração
+        
+    vm_name        = "NomeParaVM"
+    vm_cpu_num     = "4"
+    vm_mem_size    = "8192"
+    vm_disk_size   = "81920"
+    vm_nic_type    = "vmxnet3"
+    
+    admin_password= "SenhaAdmin"
+    admin_username= "UsuarioAdmin" 
+    
+    os_iso_path= "LocalizaçãodaIsonoStorageacesivelaoVcenter" // EXemplo [LUNXXX] ISOs/WindowsSrv2019.ISO
+
+// Variáveis do autounattend.xml
+
+    windows_product_key = "ChaveDoWindows"
+	organization        = "NomedaEmppresa"
+    Fullname            = "Nome do Usuario ou responsavel pela instalação"   

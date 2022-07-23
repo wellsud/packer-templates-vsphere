@@ -1,0 +1,421 @@
+2022/07/21 14:22:10 [INFO] Packer version: 1.8.1 [go1.17.8 linux amd64]
+2022/07/21 14:22:10 [TRACE] discovering plugins in /usr/bin
+2022/07/21 14:22:11 [TRACE] discovering plugins in /home/wellsud/.config/packer/plugins
+2022/07/21 14:22:11 [DEBUG] Discovered plugin: vsphere = /home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64
+2022/07/21 14:22:11 [DEBUG] Discovered plugin: windows-update = /home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64
+2022/07/21 14:22:11 [INFO] found external [clone iso] builders from vsphere plugin
+2022/07/21 14:22:11 [INFO] found external [-packer-default-plugin-name- template] post-processors from vsphere plugin
+2022/07/21 14:22:11 found external [-packer-default-plugin-name-] provisioner from windows-update plugin
+2022/07/21 14:22:11 [TRACE] discovering plugins in .
+2022/07/21 14:22:11 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/07/21 14:22:11 [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/wellsud/.packerconfig
+2022/07/21 14:22:11 [WARN] Config file doesn't exist: /home/wellsud/.packerconfig
+2022/07/21 14:22:11 [INFO] Setting cache directory: /home/wellsud/.cache/packer
+e: Running in background, not using a TTY
+2022/07/21 14:22:11 [TRACE] listing potential installations for "github.com/hashicorp/vsphere" that match " >= v1.0.3". plugingetter.ListInstallationsOptions{FromFolders:[]string{"/usr/bin/packer", ".", "/home/wellsud/.config/packer/plugins"}, BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc00016b700)}}}}
+2022/07/21 14:22:11 [TRACE] Found the following "github.com/hashicorp/vsphere" installations: [{/home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 v1.0.3}]
+2022/07/21 14:22:11 [INFO] found external [clone iso] builders from vsphere plugin
+2022/07/21 14:22:11 [INFO] found external [-packer-default-plugin-name- template] post-processors from vsphere plugin
+2022/07/21 14:22:11 [TRACE] listing potential installations for "github.com/rgl/windows-update" that match " >= 0.14.0". plugingetter.ListInstallationsOptions{FromFolders:[]string{"/usr/bin/packer", ".", "/home/wellsud/.config/packer/plugins"}, BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"linux", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc00016b700)}}}}
+2022/07/21 14:22:11 [TRACE] Found the following "github.com/rgl/windows-update" installations: [{/home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 v0.14.0}]
+2022/07/21 14:22:11 found external [-packer-default-plugin-name-] provisioner from windows-update plugin
+2022/07/21 14:22:11 [TRACE] validateValue: not active for prefixLength, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_datastore, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for organization, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_password, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_server, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_mem_size, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_disk_size, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_username, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for ip_address, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for gateway, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for admin_password, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_folder, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_nic_type, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for admin_username, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_cluster, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_network, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for os_iso_path, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for windows_product_key, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_name, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_host, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for secondary_dns, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for proxy, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_cpu_num, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vcenter_datacenter, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for vm_ip_timeout, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for fullname, so skipping
+2022/07/21 14:22:11 [TRACE] validateValue: not active for primary_dns, so skipping
+2022/07/21 14:22:11 [TRACE] Starting external plugin /home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 start builder iso
+2022/07/21 14:22:11 Starting plugin: /home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 []string{"/home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64", "start", "builder", "iso"}
+2022/07/21 14:22:11 Waiting for RPC address for: /home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64
+2022/07/21 14:22:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Plugin address: unix /tmp/packer-plugin1945243831
+2022/07/21 14:22:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Waiting for connection...
+2022/07/21 14:22:11 Received unix RPC address for /home/wellsud/.config/packer/plugins/github.com/hashicorp/vsphere/packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64: addr is /tmp/packer-plugin1945243831
+2022/07/21 14:22:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Serving a plugin connection...
+2022/07/21 14:22:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 [TRACE] starting builder iso
+2022/07/21 14:22:11 [TRACE] Starting external plugin /home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 start provisioner -packer-default-plugin-name-
+2022/07/21 14:22:11 Starting plugin: /home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 []string{"/home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64", "start", "provisioner", "-packer-default-plugin-name-"}
+2022/07/21 14:22:11 Waiting for RPC address for: /home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64
+2022/07/21 14:22:11 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Starting packer-plugin-windows-update (version 0.14.0; commit 9068df71325b1a74c8f37301fcf0e4d46ef3c63f; date 2021-08-01T11:29:50Z)
+2022/07/21 14:22:11 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Plugin address: unix /tmp/packer-plugin056856637
+2022/07/21 14:22:11 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Waiting for connection...
+2022/07/21 14:22:11 Received unix RPC address for /home/wellsud/.config/packer/plugins/github.com/rgl/windows-update/packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64: addr is /tmp/packer-plugin056856637
+2022/07/21 14:22:11 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 Serving a plugin connection...
+2022/07/21 14:22:11 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:22:11 [TRACE] starting provisioner -packer-default-plugin-name-
+2022/07/21 14:22:11 [TRACE] Starting internal plugin packer-provisioner-windows-shell
+2022/07/21 14:22:11 Starting plugin: /usr/bin/packer []string{"/usr/bin/packer", "plugin", "packer-provisioner-windows-shell"}
+2022/07/21 14:22:11 Waiting for RPC address for: /usr/bin/packer
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: [INFO] Packer version: 1.8.1 [go1.17.8 linux amd64]
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /home/wellsud/.packerconfig
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: [WARN] Config file doesn't exist: /home/wellsud/.packerconfig
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: [INFO] Setting cache directory: /home/wellsud/.cache/packer
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: args: []string{"packer-provisioner-windows-shell"}
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: Plugin address: unix /tmp/packer-plugin3305675859
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: Waiting for connection...
+2022/07/21 14:22:13 Received unix RPC address for /usr/bin/packer: addr is /tmp/packer-plugin3305675859
+2022/07/21 14:22:13 packer-provisioner-windows-shell plugin: Serving a plugin connection...
+2022/07/21 14:22:13 ui: [1;32mvsphere-iso.winserv2019-core: output will be in this color.[0m
+2022/07/21 14:22:13 ui: 
+2022/07/21 14:22:13 Build debug mode: false
+2022/07/21 14:22:13 Force build: false
+2022/07/21 14:22:13 On error: 
+2022/07/21 14:22:13 Waiting on builds to complete...
+2022/07/21 14:22:13 Starting build run: vsphere-iso.winserv2019-core
+2022/07/21 14:22:13 Running builder: 
+2022/07/21 14:22:13 [INFO] (telemetry) Starting builder vsphere-iso.winserv2019-core
+2022/07/21 14:22:13 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:13 No URLs were provided to Step Download. Continuing...
+2022/07/21 14:22:13 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:13 No CD files specified. CD disk will not be made.
+2022/07/21 14:22:13 ui: [1;32m==> vsphere-iso.winserv2019-core: Creating VM...[0m
+2022/07/21 14:22:15 ui: [1;32m==> vsphere-iso.winserv2019-core: Customizing hardware...[0m
+2022/07/21 14:22:15 ui: [1;32m==> vsphere-iso.winserv2019-core: Mounting ISO images...[0m
+2022/07/21 14:22:15 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:15 Check if ISO path is a Content Library path
+2022/07/21 14:22:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:16 ISO path not identified as a Content Library path
+2022/07/21 14:22:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:16 Using [ESX_SATA_LUN72] ISOs/WindowsSrv2019.ISO as the datastore path
+2022/07/21 14:22:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:16 Creating CD-ROM on controller '&{{{} 200 0xc0002d8420 <nil> <nil> <nil> 0 <nil>} 0 []}' with iso '[ESX_SATA_LUN72] ISOs/WindowsSrv2019.ISO'
+2022/07/21 14:22:18 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:18 Check if ISO path is a Content Library path
+2022/07/21 14:22:19 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:19 ISO path not identified as a Content Library path
+2022/07/21 14:22:19 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:19 Using [] /vmimages/tools-isoimages/windows.iso as the datastore path
+2022/07/21 14:22:19 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:19 Creating CD-ROM on controller '&{{{} 200 0xc000054d40 <nil> <nil> <nil> 0 <nil>} 0 [3000]}' with iso '[] /vmimages/tools-isoimages/windows.iso'
+2022/07/21 14:22:20 ui: [1;32m==> vsphere-iso.winserv2019-core: Adding configuration parameters...[0m
+2022/07/21 14:22:20 ui: [1;32m==> vsphere-iso.winserv2019-core: Creating floppy disk...[0m
+2022/07/21 14:22:20 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:20 Floppy path: /tmp/packer1002337019
+2022/07/21 14:22:20 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:20 Initializing block device backed by temporary file
+2022/07/21 14:22:20 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:20 Formatting the block device with a FAT filesystem...
+2022/07/21 14:22:20 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:20 Initializing FAT filesystem on block device
+2022/07/21 14:22:20 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:20 Reading the root directory from the filesystem
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Copying files flatly from floppy_files[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Copying file: scripts/enable-winrm.ps1[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Copying file: scripts/vmtools.cmd[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Done copying files from floppy_files[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Collecting paths from floppy_dirs[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Resulting paths from floppy_dirs : [][0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Done copying paths from floppy_dirs[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Copying files from floppy_content[0m
+2022/07/21 14:22:20 ui: [0;32m    vsphere-iso.winserv2019-core: Done copying files from floppy_content[0m
+2022/07/21 14:22:20 ui: [1;32m==> vsphere-iso.winserv2019-core: Uploading created floppy image[0m
+2022/07/21 14:22:22 ui: [1;32m==> vsphere-iso.winserv2019-core: Adding generated Floppy...[0m
+2022/07/21 14:22:23 ui: [1;32m==> vsphere-iso.winserv2019-core: Set boot order temporary...[0m
+2022/07/21 14:22:24 ui: [1;32m==> vsphere-iso.winserv2019-core: Power on VM...[0m
+2022/07/21 14:22:32 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:22:32 [INFO] Waiting for IP, up to total timeout: 1h0m0s, settle timeout: 5s
+2022/07/21 14:22:32 ui: [1;32m==> vsphere-iso.winserv2019-core: Waiting for IP...[0m
+2022/07/21 14:51:22 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:22 VM IP aquired: 10.11.39.250
+2022/07/21 14:51:22 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:22 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:24 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:24 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:25 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:25 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:26 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:26 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:27 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:27 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 VM IP is still the same: 10.11.39.250
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 VM IP seems stable enough: 10.11.39.250
+2022/07/21 14:51:28 ui: [1;32m==> vsphere-iso.winserv2019-core: IP address: 10.11.39.250[0m
+2022/07/21 14:51:28 ui: [1;32m==> vsphere-iso.winserv2019-core: Using WinRM communicator to connect: 10.11.39.250[0m
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 Waiting for WinRM, up to timeout: 1h0m0s
+2022/07/21 14:51:28 ui: [1;32m==> vsphere-iso.winserv2019-core: Waiting for WinRM to become available...[0m
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:28 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:28 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:33 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:33 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:33 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:33 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:33 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:33 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:33 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:33 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:38 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:38 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:38 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:38 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:38 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:38 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:38 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:38 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:43 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:43 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:43 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:43 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:43 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:43 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:43 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:43 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:48 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:48 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:48 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:48 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:48 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:48 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:48 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:48 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:53 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:53 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:53 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:53 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:53 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:53 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:53 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:53 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:51:58 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:58 [INFO] Attempting WinRM connection...
+2022/07/21 14:51:58 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:58 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:51:58 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:58 [ERROR] connection error: http response error: 401 - invalid content type
+2022/07/21 14:51:58 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:51:58 [ERROR] WinRM connection err: http response error: 401 - invalid content type
+2022/07/21 14:52:03 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:03 [INFO] Attempting WinRM connection...
+2022/07/21 14:52:03 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:03 [DEBUG] connecting to remote shell using WinRM
+2022/07/21 14:52:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:11 Checking that WinRM is connected with: 'powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA=='
+2022/07/21 14:52:11 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:11 [INFO] starting remote command: powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA==
+2022/07/21 14:52:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:16 [INFO] command 'powershell.exe -EncodedCommand JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAnAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAJwA7AGkAZgAgACgAVABlAHMAdAAtAFAAYQB0AGgAIAB2AGEAcgBpAGEAYgBsAGUAOgBnAGwAbwBiAGEAbAA6AFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlACkAewAkAFAAcgBvAGcAcgBlAHMAcwBQAHIAZQBmAGUAcgBlAG4AYwBlAD0AJwBTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACcAfQA7ACAAZQBjAGgAbwAgACIAVwBpAG4AUgBNACAAYwBvAG4AbgBlAGMAdABlAGQALgAiAA==' exited with code: 0
+2022/07/21 14:52:16 ui: [0;32m    vsphere-iso.winserv2019-core: WinRM connected.[0m
+2022/07/21 14:52:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:16 Connected to machine
+2022/07/21 14:52:16 ui: [1;32m==> vsphere-iso.winserv2019-core: Connected to WinRM![0m
+2022/07/21 14:52:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:16 Running the provision hook
+2022/07/21 14:52:16 [INFO] (telemetry) Starting provisioner windows-update
+2022/07/21 14:52:16 ui: [1;32m==> vsphere-iso.winserv2019-core: Pausing 30s before the next provisioner...[0m
+2022/07/21 14:52:46 ui: [1;32m==> vsphere-iso.winserv2019-core: Uploading the Windows update elevated script...[0m
+2022/07/21 14:52:46 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:52:46 [INFO] 4729 bytes written for 'uploadData'
+2022/07/21 14:52:46 [INFO] 4729 bytes written for 'uploadData'
+2022/07/21 14:52:46 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:46 Uploading file to 'C:/Windows/Temp/packer-windows-update-elevated.ps1'
+2022/07/21 14:52:57 ui: [1;32m==> vsphere-iso.winserv2019-core: Uploading the Windows update check for reboot required elevated script...[0m
+2022/07/21 14:52:57 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:52:57 [INFO] 4190 bytes written for 'uploadData'
+2022/07/21 14:52:57 [INFO] 4190 bytes written for 'uploadData'
+2022/07/21 14:52:57 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:52:57 Uploading file to 'C:/Windows/Temp/packer-windows-update-pending-reboot-elevated.ps1'
+2022/07/21 14:53:07 ui: [1;32m==> vsphere-iso.winserv2019-core: Uploading the Windows update script...[0m
+2022/07/21 14:53:07 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 14:53:07 [INFO] 10134 bytes written for 'uploadData'
+2022/07/21 14:53:07 [INFO] 10134 bytes written for 'uploadData'
+2022/07/21 14:53:07 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:53:07 Uploading file to 'C:/Windows/Temp/packer-windows-update.ps1'
+2022/07/21 14:53:16 ui: [1;32m==> vsphere-iso.winserv2019-core: Running Windows update...[0m
+2022/07/21 14:53:16 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 14:53:16 [INFO] starting remote command: PowerShell -ExecutionPolicy Bypass -OutputFormat Text -File C:/Windows/Temp/packer-windows-update-elevated.ps1
+2022/07/21 14:53:49 ui: [0;32m    vsphere-iso.winserv2019-core: Searching for Windows updates...[0m
+2022/07/21 14:54:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 4% cpu; 15% memory)...[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2021-01-12; 0,05 MB): Security Update for Windows Server 2019 for x64-based Systems (KB4535680)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2021-03-09; 3,12 MB): 2021-01 Update for Windows Server 2019 for x64-based Systems (KB4589208)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Skipped (filter) Windows update (2022-02-15; 75 MB): 2022-02 Cumulative Update Preview for .NET Framework 3.5, 4.7.2 and 4.8 for Windows Server 2019 for x64 (KB5011267)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2022-06-14; 75,44 MB): 2022-06 Cumulative Update for .NET Framework 3.5, 4.7.2 and 4.8 for Windows Server 2019 for x64 (KB5014805)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Skipped (filter) Windows update (2022-07-21; 113,98 MB): Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.371.562.0)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2022-07-12; 16751,09 MB): 2022-07 Cumulative Update for Windows Server 2019 (1809) for x64-based Systems (KB5015811)[0m
+2022/07/21 14:54:33 ui: [0;32m    vsphere-iso.winserv2019-core: Downloading Windows updates (4 updates; 16829,7 MB)...[0m
+2022/07/21 14:55:33 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 15% memory)...[0m
+2022/07/21 14:56:37 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 16% cpu; 14% memory)...[0m
+2022/07/21 14:57:41 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 12% cpu; 15% memory)...[0m
+2022/07/21 14:58:46 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 17% cpu; 15% memory)...[0m
+2022/07/21 14:59:50 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 24% cpu; 15% memory)...[0m
+2022/07/21 15:00:54 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 18% cpu; 15% memory)...[0m
+2022/07/21 15:01:58 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 27% cpu; 14% memory)...[0m
+2022/07/21 15:03:03 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 15:04:07 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 20% cpu; 15% memory)...[0m
+2022/07/21 15:05:11 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 10% cpu; 15% memory)...[0m
+2022/07/21 15:06:15 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:07:20 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:08:24 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:09:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:10:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 15:11:37 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:12:41 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:13:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:14:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 15:15:54 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:16:58 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:18:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:19:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:20:11 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:21:15 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:22:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:23:24 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:24:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:25:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:26:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:27:41 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:28:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:29:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 15:30:53 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:31:58 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:33:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:34:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:35:11 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:36:15 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:37:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:38:23 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:39:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:40:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:41:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:42:40 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:43:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:44:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:45:53 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 15:46:57 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:48:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:49:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 15:50:10 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:51:14 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:52:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:53:23 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:54:27 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:55:31 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:56:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:57:40 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:58:44 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 15:59:48 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:00:53 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:01:57 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:03:01 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:04:05 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:05:10 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:06:14 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:07:18 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:08:22 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:09:27 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:10:31 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:11:35 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 16:12:39 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:13:44 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:14:48 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:15:52 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:16:56 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:18:01 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:19:05 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:20:09 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:21:14 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 16:22:18 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:23:22 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:24:26 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:25:31 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:26:35 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:27:39 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:28:43 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:29:48 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:30:52 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 16:31:56 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:33:00 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:34:05 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:35:09 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:36:13 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:37:18 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:38:22 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:39:26 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:40:30 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:41:35 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:42:39 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:43:43 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:44:47 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:45:52 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 16:46:56 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 16:48:00 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:49:04 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:50:09 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 16:51:13 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:52:17 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:53:22 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:54:26 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:55:30 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 15% cpu; 14% memory)...[0m
+2022/07/21 16:56:34 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:57:39 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:58:43 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 16:59:47 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:00:51 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 17:01:56 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:03:00 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:04:04 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:05:08 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:06:13 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:07:17 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:08:21 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:09:26 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 17:10:30 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:11:34 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:12:38 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 17:13:43 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:14:47 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:15:51 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:16:55 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 17:18:00 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:19:04 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:20:08 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:21:13 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:22:17 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:23:21 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:24:25 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:25:30 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:26:34 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:27:38 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 17:28:42 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:29:47 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:30:51 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:31:55 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:32:59 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:34:04 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:35:08 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:36:12 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:37:17 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 17:38:21 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:38:25 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 [INFO] command 'PowerShell -ExecutionPolicy Bypass -OutputFormat Text -File C:/Windows/Temp/packer-windows-update-elevated.ps1' exited with code: 1
+2022/07/21 17:38:25 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 [INFO] RPC endpoint: Communicator ended with: 1
+2022/07/21 17:38:25 [INFO] 13120 bytes written for 'stdout'
+2022/07/21 17:38:25 [INFO] 0 bytes written for 'stderr'
+2022/07/21 17:38:25 [INFO] RPC client: Communicator ended with: 1
+2022/07/21 17:38:25 [INFO] RPC endpoint: Communicator ended with: 1
+2022/07/21 17:38:25 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 [INFO] 0 bytes written for 'stderr'
+2022/07/21 17:38:25 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 [INFO] 13120 bytes written for 'stdout'
+2022/07/21 17:38:25 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 [INFO] RPC client: Communicator ended with: 1
+2022/07/21 17:38:25 packer-plugin-windows-update_v0.14.0_x5.0_linux_amd64 plugin: 2022/07/21 17:38:25 Retryable error: Windows update script exited with non-zero exit status: 1
+2022/07/21 17:38:31 packer-plugin-vsphere_v1.0.3_x5.0_linux_amd64 plugin: 2022/07/21 17:38:31 [INFO] starting remote command: PowerShell -ExecutionPolicy Bypass -OutputFormat Text -File C:/Windows/Temp/packer-windows-update-elevated.ps1
+2022/07/21 17:38:41 ui: [0;32m    vsphere-iso.winserv2019-core: Searching for Windows updates...[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2021-01-12; 0,05 MB): Security Update for Windows Server 2019 for x64-based Systems (KB4535680)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2021-03-09; 3,12 MB): 2021-01 Update for Windows Server 2019 for x64-based Systems (KB4589208)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Skipped (filter) Windows update (2022-02-15; 75 MB): 2022-02 Cumulative Update Preview for .NET Framework 3.5, 4.7.2 and 4.8 for Windows Server 2019 for x64 (KB5011267)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2022-06-14; 75,44 MB): 2022-06 Cumulative Update for .NET Framework 3.5, 4.7.2 and 4.8 for Windows Server 2019 for x64 (KB5014805)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Skipped (filter) Windows update (2022-07-21; 114 MB): Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.371.578.0)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Found Windows update (2022-07-12; 16751,09 MB): 2022-07 Cumulative Update for Windows Server 2019 (1809) for x64-based Systems (KB5015811)[0m
+2022/07/21 17:38:56 ui: [0;32m    vsphere-iso.winserv2019-core: Downloading Windows updates (4 updates; 16829,7 MB)...[0m
+2022/07/21 17:39:41 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:40:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:41:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:42:54 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 17:43:58 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:45:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:46:07 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:47:11 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:48:15 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:49:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:50:24 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:51:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:52:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:53:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:54:41 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:55:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:56:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:57:54 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 17:58:58 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:00:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 18:01:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:02:11 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:03:15 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 18:04:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:05:23 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 18:06:28 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:07:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:08:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:09:40 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:10:45 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:11:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:12:53 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:13:57 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 14% memory)...[0m
+2022/07/21 18:15:02 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 14% memory)...[0m
+2022/07/21 18:16:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 14% memory)...[0m
+2022/07/21 18:17:10 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:18:14 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:19:19 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:20:23 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:21:27 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:22:32 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:23:36 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:24:40 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 13% memory)...[0m
+2022/07/21 18:25:44 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:26:49 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:27:53 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 13% memory)...[0m
+2022/07/21 18:28:57 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 13% memory)...[0m
+2022/07/21 18:30:01 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 0% cpu; 13% memory)...[0m
+2022/07/21 18:31:06 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:32:10 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:33:14 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m
+2022/07/21 18:34:18 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 2% cpu; 13% memory)...[0m
+2022/07/21 18:35:23 ui: [0;32m    vsphere-iso.winserv2019-core: Waiting for operation to complete (system performance: 1% cpu; 13% memory)...[0m

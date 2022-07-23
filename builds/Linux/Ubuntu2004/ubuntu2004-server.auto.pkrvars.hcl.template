@@ -1,0 +1,63 @@
+# ----------------------------------------------------------------------------
+# Nome:         variables.pkrvars.hcl
+# Description:  Valores customizaveis da construção da Imagem
+# Author:       Wellington Oliveira (@woliveira)
+# URL:          https://github.com/v12n-io/packer
+# Date:         03/05/2022
+# ----------------------------------------------------------------------------
+
+
+// Credenciais do Vcenter
+
+    vcenter_server          = "FQDNdoVcenter"
+    vcenter_username        = "UsuarioComPermissaoparaCriarVMsnoVcenter"
+    vcenter_password        = "SenhadoUsuarioCitadoanteriormente"
+
+// Localização
+
+    vcenter_datacenter      = "dataCenter_do_Vcenter"
+    vcenter_cluster         = "Cluster_do_Vcenter"
+    vcenter_network         = "Vm_Network"
+    vcenter_datastore       = "Storage_do_Template"
+    vcenter_host            = "HostDoTemplate"
+    vcenter_folder          = "PAsta_Do_Template"
+
+// Configuração
+        
+    vm_name                 = "Nome_Do_Template"
+    vm_cpu_num              = "4"
+    vm_mem_size             = "16384"
+    vm_disk_size            = "92160"
+    vm_nic_type             = "vmxnet3"
+    vm_ip_address           = "IP_do_Template"
+    vm_gateway              = "Autodescritivo"
+    primary_dns             = "dns_primario"
+    secondary_dns           = "Dns_Secundario"
+    
+    // senha criptografada com o comando mkpasswd -m sha-512 --rounds=4096
+    ubuntu_password         = "SenhaCriptografada"
+    ubuntu_username         = "UsuarioAdminPadraoUbuntu"
+    pub_key                 = "chave publica ssh que o packer usara para conexao e configuracao"
+    ssh_password            = "Senha_ssh_sem criptografia"
+    
+    os_iso_url              = "https://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso"
+    os_iso_checksum         = "28ccdb56450e643bad03bb7bcf7507ce3d8d90e8bf09e38f6bd9ac298a98eaad"
+    vm_boot_wait            = "5s"
+    shell_scripts           = ["./scripts/update _and_clean_server.sh"]
+    vm_firmware             = "bios"
+    vm_cdrom_type           = "sata"
+
+
+// Variáveis do arquiv user-data
+
+    vm_guest_os_language = "en_US"
+    vm_guest_os_keyboard ="br"
+    vm_guest_os_timezone = "America/Sao_Paulo"
+
+// Configuração da conexão ssh
+    communicator_port      = 22
+    communicator_timeout   = "30m"
+    ssh_handshake_attempts = "20"   
+
+// desligamento da VM
+    vsphere_shutdown_timeout = "1h15m" 
