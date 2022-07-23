@@ -1,4 +1,4 @@
-# imagens_servidores
+# Repositório de Templates Vmware para Servidores Windows e Ubuntu
 Imagens construídas com [Hashicorp Packer](https://www.packer.io/) para automatização da criação/atualização dos Templates Básicos (Golden Images) de servidores Windows Server 2019 e Ubuntu 20.04 
 
 ## Cenário
